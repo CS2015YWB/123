@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Title-->
+    <title>UML_testing</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Awesome-Bootstrap-Checkbox-->
+    <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+	<link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--功能实现-->
+    <script src="js/test.js"></script>
+    <!--背景色：米黄色(护眼)-->
+    <style>
+        .onetitle{
+            padding-top:40px 15px;
+            text-align: center;
+        }
+        .flagg{
+            font-family: sans-serif;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        .bgc{
+            background-color: #F7EED6;
+        }
+        .fsize{
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body class="bgc">
+    <div class="onetitle">
+        <h1>统一建模语言理论测试</h1><br/>
+    </div>
+    <div class="container">
+        <div class="container">
+            <div class="row flagg">
+                <div class="col-md-2" align="right">
+                    <label>考试科目：</label>
+                </div>
+                <div class="col-md-2" >统一建模语言</div>
+                <div class="col-md-2" align="right">
+                    <label>时间：</label>
+                </div>
+                <div class="col-md-2" >100分钟</div>
+                <div class="col-md-2" align="right">
+                    <label>得分：</label>
+                </div>
+                <div class="col-md-2">
+                    <input id="score" type="text" class="form-control" placeholder="满分：100分">
+                </div>
+            </div>
+            <div class="row flagg">
+                <div class="col-md-2" align="right">
+                    <label>班级：</label>
+                </div>
+                <div class="col-md-2" >
+                    <input id="classes" type="text" class="form-control" placeholder="1501">
+                </div>
+                <div class="col-md-2" align="right">
+                    <label>学号：</label>
+                </div>
+                <div class="col-md-2" >
+                    <input id="stunum" type="text" class="form-control" placeholder="2015210000">
+                </div>
+                <div class="col-md-2" align="right">
+                    <label>姓名：</label>
+                </div>
+                <div class="col-md-2" >
+                    <input id="names" type="text" class="form-control" placeholder="闫小博">
+                </div>
+            </div>
+        </div>
+        <h1></h1>
+        <h2></h2>
+        <div class="col-md-10 col-md-offset-2">
+        <div>
+            <h4><strong>一、填空题 </strong><span class="label label-info">每空5分，共20分</span></h4>
+            <form class="fsize">
+                <table class="table table-condensed">
+                    <tr>
+                        <td><p class="bg-danger">1.UML的中文全称是: </p></td>
+                        <td><input type="text" class="form-control" id="blank1" placeholder="#"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><p class="bg-danger">2.对象最突出的特征是: </p></td>
+                        <td><input type="text" class="form-control" id="blank2" placeholder="#"></td>
+                        <td><input type="text" class="form-control" id="blank3" placeholder="#"></td>
+                        <td><input type="text" class="form-control" id="blank4" placeholder="#"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <h4><strong>二、选择题（每题10分，共20分）</strong><span class="label label-info">每空5分，共20分</span></h4>
+        <form class="fsize">
+            <p class="bg-danger">1.UML与软件工程的关系是:</p>
+            <div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio1" id="radio1">
+                    <label for="radio1">(A) UML就是软件工程</label>
+                </div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio1" id="radio2">
+                    <label for="radio2">(B) UML参与到软件工程中软件开发过程的几个阶段</label>
+                </div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio1" id="radio3">
+                    <label for="radio3">(C) UML与软件工程无关</label>
+                </div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio1" id="radio4">
+                    <label for="radio4">(D) UML是软件工程的一部分</label>
+                </div>
+            </div>
+        </form>
+        <form class="fsize">
+            <p class=bg-danger>2.Java语言支持</p>
+            <div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio2" id="radio5">
+                    <label for="radio5">(A) 单继承</label>
+                </div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio2" id="radio6">
+                    <label for="radio6">(B) 多继承</label>
+                </div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio2" id="radio7">
+                    <label for="radio7">(C) 单继承和多继承都支持</label>
+                </div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio2" id="radio8">
+                    <label for="radio8">(D) 单继承和多继承都不支持</label>
+                </div>
+            </div>
+        </form>
+        <h4><strong>三、多择题 </strong><span class="label label-info">每题10分，共20分</span></h4>
+        <form class="fsize">
+            <p class="bg-danger">1.用例的粒度分为以下哪三种：</p>
+            <div class="checkbox checkbox-danger">
+                <input id="checkbox1" class="styled" type="checkbox">
+                <label for="checkbox1"> (A) 概述级</label>
+            </div>
+            <div class="checkbox checkbox-danger">
+                <input id="checkbox2" class="styled" type="checkbox">
+                <label for="checkbox2"> (B) 需求级</label>
+            </div>
+            <div class="checkbox checkbox-danger">
+                <input id="checkbox3" class="styled" type="checkbox">
+                <label for="checkbox3"> (C) 用户目标级</label>
+            </div>
+            <div class="checkbox checkbox-danger">
+                <input id="checkbox4" class="styled" type="checkbox">
+                <label for="checkbox4"> (D) 子功能级</label>
+            </div>
+        </form>
+        <form class="fsize">
+            <p class=bg-danger>2.类图由以下哪三部分组成：</p>
+            <div class="checkbox checkbox-danger">
+                <input id="checkbox5" class="styled" type="checkbox">
+                <label for="checkbox5"> (A) 名称(Name)</label>
+            </div>
+            <div class="checkbox checkbox-danger">
+                <input id="checkbox6" class="styled" type="checkbox">
+                <label for="checkbox6"> (B) 属性(Attribute)</label>
+            </div>
+            <div class="checkbox checkbox-danger">
+                <input id="checkbox7" class="styled" type="checkbox">
+                <label for="checkbox7"> (C) 操作(Operation)</label>
+            </div>
+            <div class="checkbox checkbox-danger">
+                <input id="checkbox8" class="styled" type="checkbox">
+                <label for="checkbox8"> (D) 方法(Function)</label>
+            </div>
+        </form>
+        <h4><strong>四、判断题 </strong><span class="label label-info">每题10分，共20分</span></h4>
+        <form class="fsize">
+            <p class="bg-danger">
+                1.用例图只是用于和客户交流和沟通的,用于确定需求。
+                <div class="radio radio-danger">
+                        <input type="radio" name="radio11" id="radio11">
+                        <label for="radio11"> √ </label>
+                </div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio11" id="radio12">
+                    <label for="radio12"> × </label>
+                </div>  
+            </p>
+        </form>
+        <form class="fsize">
+            <p class="bg-danger">
+                2.在状态图中,终止状态在一个状态图中允许有任意多个。
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio12" id="radio13">
+                    <label for="radio13"> √ </label>
+                </div>
+                <div class="radio radio-danger">
+                    <input type="radio" name="radio12" id="radio14">
+                    <label for="radio14"> × </label>
+                </div>       
+            </p>
+        </form>
+        <h4><strong>五、简答题 </strong><span class="label label-info">每题20分，共20分</span></h4>
+        <p class="fsize bg-danger">1. 简述什么是模型以及模型的表现形式？</p>
+        <form class="fsize" action="handler">
+                <textarea class="form-control" rows="5" id="shortanswer"></textarea>
+        </form>
+        <br/>
+        <form class="fsize" action="">
+            <p align=center>
+                <button type="button" class="btn btn-danger" id="submit">计算分数</button> 
+            </p>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
