@@ -51,3 +51,9 @@ function loadPromotions() {
         }
     ];
 }
+
+//模块接口
+module.exports={
+    loadPromotions: loadPromotions,
+    loadAllItems: loadAllItems,
+};
